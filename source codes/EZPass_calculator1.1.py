@@ -167,7 +167,7 @@ def select():
 def EZPass_calculator():
     # GUI function:
     root = tk.Tk()
-    root.geometry("850x600")
+    root.geometry("680x600")
     root.title("EZPass calculator")
 
     load_btn = tk.Button(
@@ -178,7 +178,7 @@ def EZPass_calculator():
     select_btn = tk.Button(root, text="Search Plate Number", command=select)
 
     global load_text
-    load_text = tk.Text(root, width=100, height=10)
+    load_text = tk.Text(root, width=80, height=28)
 
     # Entry area for plate search:
     global plate_entry
@@ -193,7 +193,7 @@ def EZPass_calculator():
     select_btn.grid(row=2, column=3, padx=5, pady=10, sticky="ew")
     plate_entry.grid(row=3, column=4, padx=5, pady=5, sticky="e")
     plate_entry_label.grid(row=3, column=3, padx=5, pady=5, sticky="w")
-    load_text.grid(row=4, column=0, padx=5, pady=5, columnspan=5, sticky="nsew")
+    load_text.grid(row=4, column=0, padx=10, pady=5, columnspan=5, sticky="nsew")
     load_btn.grid(row=0, column=0, padx=10, pady=10)
     root.mainloop()
 
